@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="category">
+        <item>TOP</item>
+        <item>BOTTOM</item>
+        <item>SHOES</item>
+    </string-array>
+    <string-array name="weather">
+        <item>Sunny</item>
+        <item>Rainy</item>
+        <item>Snowy</item>
+        <item>Cloudy</item>
+    </string-array>
+    <string-array name="array_photo">
+        <item>사진 촬영</item>
+    </string-array>
+</resources>

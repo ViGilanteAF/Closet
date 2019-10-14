@@ -1,0 +1,120 @@
+<ScrollView 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/addView"
+        android:layout_width="match_parent"
+        android:layout_height="467dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageClothe"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_weight="0.78"
+                android:padding="30dp"
+                android:src="@drawable/ic_launcher" />
+
+            <Button
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:text="photo" />
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            >
+
+            <TableRow android:layout_width="wrap_content" >
+
+                <TextView
+                    android:id="@+id/nameTextView"
+                    android:text="옷 이름"
+                    android:textSize="24dp"
+                    android:padding="15dp"/>
+
+                <EditText
+                    android:id="@+id/nameEditText"
+					android:padding="15dp"/>
+			</TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/categoryTextView"
+                    android:text="종류"
+                    android:textSize="24dp"
+                    android:padding="15dp"/>
+
+                <Spinner
+                    android:id="@+id/categorySpinner"
+					android:padding="15dp"
+					android:drawSelectorOnTop="true"
+					android:prompt="@string/prompt_category"
+					/>
+			</TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/brandTextView"
+                    android:text="브랜드"
+                    android:textSize="24dp"
+                    android:padding="15dp"/>
+
+                <EditText
+                    android:id="@+id/brandEditText"
+					android:padding="15dp"/>
+			</TableRow>
+            <TableRow>
+                <TextView
+                    android:id="@+id/weatherTextView"
+                    android:text="날씨"
+                    android:textSize="24dp"
+                    android:padding="15dp"/>
+
+                <Spinner
+                    android:id="@+id/weatherSpinner"
+					android:padding="15dp"
+					android:drawSelectorOnTop="true"
+					android:prompt="@string/prompt_case"/>
+			</TableRow>
+        </TableLayout>
+         
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom">
+
+        <Button
+	        android:id="@+id/cancleButton"
+    	    android:layout_width="wrap_content"
+       	 	android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="CANCLE" />
+
+        <Button
+            android:id="@+id/addbutton"
+    	    android:layout_width="wrap_content"
+       	 	android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SAVE" />
+	</LinearLayout>
+
+</LinearLayout>   
+</ScrollView>
